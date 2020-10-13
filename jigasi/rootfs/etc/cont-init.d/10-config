@@ -21,6 +21,7 @@ fi
 
 mkdir -pm777 /tmp/transcripts
 chown jigasi:jitsi /tmp/transcripts
+chown -R jigasi:jitsi /config
 
 # Create Google Cloud Credentials
 if [[ $ENABLE_TRANSCRIPTIONS -eq 1 || $ENABLE_TRANSCRIPTIONS == "true" ]] && [[ ! -f /config/key.json ]]; then
