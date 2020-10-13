@@ -35,6 +35,7 @@ services:
             - JIGASI_TRANSCRIBER_ADVERTISE_URL
             - JIGASI_TRANSCRIBER_RECORD_AUDIO
             - JIGASI_TRANSCRIBER_SEND_TXT
+            - JIGASI_DOMAIN_BASE
             - GC_PROJECT_ID
             - GC_PRIVATE_KEY_ID
             - GC_PRIVATE_KEY
