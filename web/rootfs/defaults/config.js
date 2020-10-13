@@ -90,7 +90,7 @@ var config = {
     disableAudioLevels: false,
     audioLevelsInterval: 500,
 
-    // Enabling this will run the lib-jitsi-meet no audio detection module which
+    // Enabling this will run the lib-jitsi-meet no audio  module which
     // will notify the user if the current selected microphone has no audio
     // input and will suggest another valid device if one is present.
     enableNoAudioDetection: true,
@@ -361,7 +361,7 @@ var config = {
     // disable1On1Mode: false,
 
     // Default language for the user interface.
-    // defaultLanguage: 'en',
+    defaultLanguage: 'en',
 
     // If true all users without a token will be considered guests and all users
     // with token will be considered non-guests. Only guests will be allowed to

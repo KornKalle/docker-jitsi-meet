@@ -11,6 +11,9 @@ RUN \
 	apt-dpkg-wrap apt-get -d install -y jitsi-meet-web-config && \
     dpkg -x /var/cache/apt/archives/jitsi-meet-web-config*.deb /tmp/pkg && \
 	apt-cleanup && \
+	cp /defaults/main-de.json /usr/share/jitsi-meet/lang/main-de.json && \
+	cp /defaults/hzb-logo.png /usr/share/jitsi-meet/images/watermark.png && \
+	cp /defaults/favicons.png /usr/share/jitsi-meet/images/favicon.ico && \
 	rm -f /etc/nginx/conf.d/default.conf && \
 	rm -rf /tmp/pkg /var/cache/apt
 
